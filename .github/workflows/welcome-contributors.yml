@@ -1,6 +1,9 @@
 name: Welcome Contributors
 
 on:
+  push:
+    branches:
+      - main
   issues:
     types: [opened]
   pull_request:
@@ -10,9 +13,18 @@ jobs:
   welcome:
     runs-on: ubuntu-latest
 
+    env:
+      API_KEY: ${{ secrets.API_KEY }}
+      # Add other secrets here as needed
+      ANOTHER_SECRET: ${{ secrets.ANOTHER_SECRET }}
+
     steps:
     - name: Welcome Message
       if: github.event.action == 'opened'
       run: |
         echo "Welcome to the project, @${{ github.event.issue.user.login }}! Thank you for your contribution."
         echo "Please make sure to follow the contribution guidelines."
+    - name: Run Your Project
+      run: |
+        # Add commands to run your project here
+        echo "Running your project with API_KEY=${{ env.API_KEY }}"
