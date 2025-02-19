@@ -1,0 +1,18 @@
+name: Welcome Contributors
+
+on:
+  issues:
+    types: [opened]
+  pull_request:
+    types: [opened]
+
+jobs:
+  welcome:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Welcome Message
+      if: github.event.action == 'opened'
+      run: |
+        echo "Welcome to the project, @${{ github.event.issue.user.login }}! Thank you for your contribution."
+        echo "Please make sure to follow the contribution guidelines."
