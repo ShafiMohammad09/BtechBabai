@@ -15,16 +15,17 @@ jobs:
 
       - name: Create Environment File
         run: |
-          echo "window.FIREBASE_API_KEY='${{ secrets.FIREBASE_API_KEY }}';" > env.js
-          echo "window.FIREBASE_AUTH_DOMAIN='${{ secrets.FIREBASE_AUTH_DOMAIN }}';" >> env.js
-          echo "window.FIREBASE_DATABASE_URL='${{ secrets.FIREBASE_DATABASE_URL }}';" >> env.js
-          echo "window.FIREBASE_DEPLOY_TOKEN='${{ secrets.FIREBASE_DEPLOY_TOKEN }}';" >> env.js
-          echo "window.FIREBASE_PROJECT_ID='${{ secrets.FIREBASE_PROJECT_ID }}';" >> env.js
-          echo "window.FIREBASE_STORAGE_BUCKET='${{ secrets.FIREBASE_STORAGE_BUCKET }}';" >> env.js
-          echo "window.FIREBASE_MESSAGING_SENDER_ID='${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}';" >> env.js
-          echo "window.FIREBASE_APP_ID='${{ secrets.FIREBASE_APP_ID}}';" >> env.js
-          echo "window.FIREBASE_MEASUREMENT_ID='${{ secrets.FIREBASE_MEASUREMENT_ID }}';" >> env.js
+          mkdir -p public
+          echo "window.FIREBASE_API_KEY='${{ secrets.FIREBASE_API_KEY }}';" > public/env.js
+          echo "window.FIREBASE_AUTH_DOMAIN='${{ secrets.FIREBASE_AUTH_DOMAIN }}';" >> public/env.js
+          echo "window.FIREBASE_DATABASE_URL='${{ secrets.FIREBASE_DATABASE_URL }}';" >> public/env.js
+          echo "window.FIREBASE_PROJECT_ID='${{ secrets.FIREBASE_PROJECT_ID }}';" >> public/env.js
+          echo "window.FIREBASE_STORAGE_BUCKET='${{ secrets.FIREBASE_STORAGE_BUCKET }}';" >> public/env.js
+          echo "window.FIREBASE_MESSAGING_SENDER_ID='${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}';" >> public/env.js
+          echo "window.FIREBASE_APP_ID='${{ secrets.FIREBASE_APP_ID}}';" >> public/env.js
+          echo "window.FIREBASE_MEASUREMENT_ID='${{ secrets.FIREBASE_MEASUREMENT_ID }}';" >> public/env.js
       
+ 
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
 
