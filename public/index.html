@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BtechBabai</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TVTGCZFF');</script>
+  <!-- End Google Tag Manager -->
+  <style>
+    /* Ensure smooth scrolling across the entire document */
+    html {
+      scroll-behavior: smooth;
+    }
+    /* From Uiverse.io by qhns3 */ 
+.container {
+  width: 100%;
+  height: 100%;
+
+  background: #000000;
+  --gap: 5em;
+  --line: 1px;
+  --color: rgba(255, 255, 255, 0.2);
+
+  background-image: linear-gradient(
+      -90deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    ),
+    linear-gradient(
+      0deg,
+      transparent calc(var(--gap) - var(--line)),
+      var(--color) calc(var(--gap) - var(--line) + 1px),
+      var(--color) var(--gap)
+    );
+  background-size: var(--gap) var(--gap);
+}
+
+  </style>
+
+</head>
+<body class="container antialiased text-gray-300 leading-normal tracking-wider text-shadow-lg">
+  <div class="bg-indigo-600 px-4 py-3 text-white">
+    <!-- Message for desktop and large screens -->
+    <p class="hidden sm:block text-center text-sm font-medium">
+      We currently have resources for Pragati Engineering College. Our team is working diligently to add more content. Please be patient and stay tuned for updates!
+      <a href="#" class="inline-block underline">Help us!</a>
+    </p>
+    
+    <!-- Message for small screens like mobile -->
+    <p class="block sm:hidden text-center text-sm font-medium">
+      We currently have resources for Pragati Engineering College. Please be patient and stay tuned for updates!
+      <a href="#" class="inline-block underline">Help us!</a>
+    </p>
+  </div>
+  
+  
+  <nav class=" shadow-md py-6 px-8">
+    <div class="container mx-auto flex flex-wrap items-center justify-between">
+      <div class="text-3xl font-bold text-gray-300 text-shadow">BtechBabai</div>
+      <div class="flex space-x-4">
+        <a href="#" class="text-gray-300 hover:text-gray-500 text-shadow">Home</a>
+        <a href="#" class="text-gray-300 hover:text-gray-500 text-shadow">Resources</a>
+        <a href="#" class="text-gray-300 hover:text-gray-500 text-shadow">About</a>
+        <a href="#" class="text-gray-300 hover:text-gray-500 text-shadow">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  
+  
+  <section class="branding  text-white">
+    <div class="mx-auto max-w-screen-xl px-4 py-15 lg:flex  lg:items-center">
+      <div class="mx-auto max-w-3xl text-center">
+        <h1
+          class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
+        >
+          Welcome to BtechBabai.
+  
+          <span class="sm:block"> A One Stop To All Your Academic Needs </span>
+        </h1>
+  
+        <p class="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
+          Specially crafted for the pros at one-night exam prep and last-minute hustlers!
+        </p>
+  
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <a
+            class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto"
+            href="#formSection"
+          >
+            Get Started
+          </a>
+  
+          <a
+            class="block w-full rounded border border-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-blue-600 focus:outline-none focus:ring active:bg-blue-500 sm:w-auto"
+            href="#"
+          >
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <main id="formSection" class="container mx-auto px-8 py-10">
+    <form id="searchForm" action="results.html" method="GET">
+      <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <h2 class="text-2xl font-bold text-gray-300 text-shadow">Select College</h2>
+          </div>
+          <div class="p-6">
+            <select name="college" class="w-full h-10 px-3 py-2 border border-gray-600 bg-black text-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-500 text-shadow">
+              <option value="Pragati">Pragati Engineering College</option>
+              <option value="Aditya">Aditya Engineering College</option>
+              <option value="GIET">GIET Engineering College</option>
+              <option value="KEIT">KEIT Engineering College</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <h2 class="text-2xl font-bold text-gray-300 text-shadow">Select Semester</h2>
+          </div>  
+          <div class="p-6">
+            <select name="semester" class="w-full h-10 px-3 py-2 border border-gray-600 bg-black text-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-500 text-shadow">
+              <option value="sem1">Semester 1</option>
+              <option value="sem2">Semester 2</option>
+              <option value="sem3">Semester 3</option>
+              <option value="sem4">Semester 4</option>
+              <option value="sem5">Semester 5</option>
+              <option value="sem6">Semester 6</option>
+              <option value="sem7">Semester 7</option>
+              <option value="sem8">Semester 8</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="rounded-lg border bg-card text-card-foreground shadow-sm">
+          <div class="flex flex-col space-y-1.5 p-6">
+            <h2 class="text-2xl font-bold text-gray-300 text-shadow">Select Branch</h2>
+          </div>
+          <div class="p-6">
+            <select name="branch" class="w-full h-10 px-3 py-2 border border-gray-600 bg-black text-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-500 text-shadow">
+              <option value="CSE">CSE</option>
+              <option value="CSE-AI">CSE-AI</option>
+              <option value="ECE">ECE</option>
+              <option value="EEE">EEE</option>
+              <option value="MECH">MECH</option>
+            </select>
+          </div>
+        </div>
+        
+        <div class="flex justify-center items-center">
+          <button type="submit" class="block w-full rounded border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto">
+            Search
+          </button>
+        </div>
+      </section>
+    </form>
+  </main>
+
+  <footer class="bg-black text-gray-300 py-6 text-shadow">
+    <div class="container mx-auto px-8">
+      <div class="flex justify-between items-center">
+        <div class="text-lg text-shadow">© 2023 BtechBabai</div>
+        <div class="flex space-x-4">
+          <a href="#" class="text-gray-500 hover:text-gray-300 text-shadow">Privacy Policy</a>
+          <a href="#" class="text-gray-500 hover:text-gray-300 text-shadow">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
