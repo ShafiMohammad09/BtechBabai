@@ -25,6 +25,7 @@ jobs:
           echo "window.FIREBASE_APP_ID='${{ secrets.FIREBASE_APP_ID}}';" >> public/env.js
           echo "window.FIREBASE_MEASUREMENT_ID='${{ secrets.FIREBASE_MEASUREMENT_ID }}';" >> public/env.js
       
+      
  
       - name: Install Firebase CLI
         run: npm install -g firebase-tools
